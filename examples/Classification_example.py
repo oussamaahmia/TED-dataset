@@ -35,7 +35,7 @@ def get_documents(path):
         yield ("\n".join(l), cpv_hierarchy(cpv))
 
 
-txt, y_ = zip(*get_documents('fd-TED/filtered/ted-FR.jsons.gz'))
+txt, y_ = zip(*get_documents('fd-TED/filtered/ted-'+language+'.jsons.gz'))
 
 count = CountVectorizer().fit(txt)
 binarizer = MultiLabelBinarizer().fit(y_)
