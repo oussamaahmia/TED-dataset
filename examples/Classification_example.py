@@ -6,9 +6,11 @@ from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import classification_report
 
-language = "EN"
+version = "v1"
+language = "EN" #ES LV ET MT FI BG NL CS FR PL DA GA PT DE HR RO EL HU SK IT SL EN LT SV
+labels_language = "EN"
 hierarchy = 2
-cpv_labels = json.load(open('fd-TED/cpv.json'))[language]
+cpv_labels = json.load(open('fd-TED/cpv.json'))[labels_language]
 
 
 def cpv_hierarchy(cpv, hierarchy=2):
@@ -35,7 +37,7 @@ def get_documents(path):
         yield ("\n".join(l), cpv_hierarchy(cpv))
 
 
-txt, y_ = zip(*get_documents('fd-TED/filtered/ted-'+language+'.jsons.gz'))
+txt, y_ = zip(*get_documents('fd-TED/filtered/ted-%s-%s.jsons.gz' % (language, version)))
 
 count = CountVectorizer().fit(txt)
 binarizer = MultiLabelBinarizer().fit(y_)
