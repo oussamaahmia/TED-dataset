@@ -7,7 +7,7 @@ tender published by the EU states.
 - The [fd-TED](http://share-irisa.univ-ubs.fr/octopusted/pub/fd-TED/) corpus is built from the full content of the documents extracted from the  [TED − Tenders Electronic Daily platform](https://ted.europa.eu). This dataset can be used as a benchmark for supervised classification or for training machine learning models applied to business intelligence application.
 We also propose a filtered version of fd-ted created by ignoring administrative information.
 
- ***NB: The currently published dataset, contains only filtered documents. The raw version will be soon available***
+ [comment]: <> (***NB: The currently published dataset, contains only filtered documents. The raw version will be soon available***)
  
  For further information please refer to this [article](http://www.lrec-conf.org/proceedings/lrec2018/pdf/832.pdf).
  
