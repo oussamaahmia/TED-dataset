@@ -2,7 +2,7 @@
 The two sub-datasets, fd-TED and par-TED, will be updated in a regular basis to keep tracks of the new calls for
 tender published by the EU states.
 
-- [par-TED](https://drive.google.com/drive/folders/1U2W-dKc7jJBtpt1iuLqDZgNQeM8wA7ds) is a multilingual (24 languages) aligned corpus in the form of a set of parallel unique sentences translated to at least 23 languages.
+- The [par-TED](https://drive.google.com/drive/folders/1U2W-dKc7jJBtpt1iuLqDZgNQeM8wA7ds) is a multilingual (24 languages) aligned corpus in the form of a set of parallel unique sentences translated to at least 23 languages.
 
 - The [fd-TED](https://drive.google.com/drive/folders/1G-21p8vxvbXtb6hoQPjbvMnokThyk8HI) corpus is built from the full content of the documents extracted from the  [TED − Tenders Electronic Daily platform](https://ted.europa.eu). This dataset can be used as a benchmark for supervised classification or for training machine learning models applied to business intelligence application.
 We also propose a filtered version of fd-ted created by ignoring administrative information.
